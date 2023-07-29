@@ -7,6 +7,13 @@ import com.example.student.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/*
+*
+*
+* all student data controller
+*
+ */
+
 @RestController
 @RequestMapping("/suyash")
 public class MyController {
