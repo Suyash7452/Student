@@ -2,6 +2,7 @@ package com.example.student.controller;
 
 
 import com.example.student.entity.Students;
+import com.example.student.responce.PaginationRequestDto;
 import com.example.student.responce.ResposeDTO;
 import com.example.student.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,9 @@ public class MyController {
     @GetMapping("/getAllData")
     public ResposeDTO getAllData(){
         return service.getAllData();
+    }
+    @PostMapping("/getAllDataPagination")
+    public ResposeDTO getAllDataPagination(@RequestBody PaginationRequestDto paginationRequestDto){
+        return service.getAllDataPagination(paginationRequestDto);
     }
 }
